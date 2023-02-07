@@ -24,10 +24,13 @@ function App() {
   const [clicked, setClicked] = useState([])
   const [gameWon, setGameWon] = useState(false)
 
-  const resetGame = () => {
+  const resetGame = (gameWon) => {
     if (score > bestScore) {
       const newBestScore = score
       setBestScore(newBestScore)
+    }
+    if (gameWon) {
+      setBestScore(0)
     }
     setScore(0)
     setOrder(createRandomOrder())
@@ -46,6 +49,15 @@ function App() {
     })
 
     if (gameOver) { return }
+    if ((score + 1) === 12) {
+      setGameWon(true)
+      setScore(12)
+      setBestScore(12)
+      setTimeout(() => {
+        resetGame(true)
+      }, 5000)
+      return
+    }
 
     const newClickedArray = clicked
     newClickedArray.push(imageNumber)
@@ -56,14 +68,15 @@ function App() {
 
   return (
     <div className="App">
+      <div className='overlay'></div>
       <div className='header'>
         <div className='title-container'>
           <h1>The Memory Game</h1>
           <p>Get points by clicking on an image, but don't click on any more than once!</p>
         </div>
         <Scoreboard score={score} bestScore={bestScore}/>
-        <ImageBoard order={order} clickImage={clickImage} gameWon={gameWon}/>
       </div>
+      <ImageBoard order={order} clickImage={clickImage} gameWon={gameWon}/>
     </div>
   );
 }

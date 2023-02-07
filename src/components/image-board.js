@@ -29,7 +29,7 @@ const imageArray = [[lightbulb, "Light Bulb"],
 export default function ImageBoard (props) {
   const { order, clickImage, gameWon } = props
   if (gameWon) {
-    return <h3>You won the game!</h3>
+    return <h1>You won the game!</h1>
   }
   const imageItems = order.map((index) => {
     return <ImageCard image={imageArray[index][0]}
