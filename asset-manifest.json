@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.04e52631.css",
+    "main.js": "/memory-card/static/js/main.eeb25f4e.js",
+    "static/media/balloons.gif": "/memory-card/static/media/balloons.12ab71a3d930a42e31e6.gif",
+    "static/media/snowflake.gif": "/memory-card/static/media/snowflake.9009e1a85494d2488a4e.gif",
+    "static/media/phone.gif": "/memory-card/static/media/phone.92799eed16279fb10f6b.gif",
+    "static/media/fire.gif": "/memory-card/static/media/fire.ab8cc0af88a8dbd243c1.gif",
+    "static/media/rocket.gif": "/memory-card/static/media/rocket.40329a34c4c138180450.gif",
+    "static/media/clown-fish.gif": "/memory-card/static/media/clown-fish.5b07db0b6b5c91969cf2.gif",
+    "static/media/burger.gif": "/memory-card/static/media/burger.ab634df3aa01a1d649bc.gif",
+    "static/media/home.gif": "/memory-card/static/media/home.4dedeeea90e0b4beedbb.gif",
+    "static/media/ball.gif": "/memory-card/static/media/ball.c31d4075f6adfec9f17b.gif",
+    "static/media/idea.gif": "/memory-card/static/media/idea.87e03add658296c0eddb.gif",
+    "static/media/money-bag.gif": "/memory-card/static/media/money-bag.a2c612bf35eef1334267.gif",
+    "static/media/target.gif": "/memory-card/static/media/target.05949447d43425dd04e3.gif",
+    "index.html": "/memory-card/index.html",
+    "main.04e52631.css.map": "/memory-card/static/css/main.04e52631.css.map",
+    "main.eeb25f4e.js.map": "/memory-card/static/js/main.eeb25f4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04e52631.css",
+    "static/js/main.eeb25f4e.js"
+  ]
+}
